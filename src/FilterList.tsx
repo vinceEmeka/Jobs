@@ -3,7 +3,7 @@ function FilterList () {
  return(
   <div className="select-container">
    <select className="select" name="filter" id="filter">
-       <option value="">Select Location</option>
+       <option value="">Choose Location</option>
     <option value="remote">Remote</option>
     <option value="usa">USA</option>
     <option value="germany">Germany</option>
@@ -16,11 +16,10 @@ function FilterList () {
    </select>
 
    <select className="select">
-    <option value="">Select Job Type</option>
-    <option value="full-time">Full-time</option>
-    <option value="part-time">Part-time</option>
-    <option value="contract">Contract</option>
-    <option value="internship">Internship</option>
+    <option value="">Work Model</option>
+    <option value="full-time">On-site</option>
+    <option value="part-time">Hybrid</option>
+    <option value="contract">Remote</option>
   </select>
   </div>
  );

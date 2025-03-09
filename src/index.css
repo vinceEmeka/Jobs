@@ -174,7 +174,7 @@ button:hover {
 @media (max-width: 480px) {
   .card-container {
     grid-template-columns: 1fr;
-    gap: 0.8rem;
+    /* gap: 0.8rem; */
     padding: 0.8rem;
   }
   .card {
@@ -182,10 +182,13 @@ button:hover {
     line-height: 1.2rem;
   }
   .card p {
-    padding: 3px 0;
+    padding: 4px 0;
+  }
+  .salary {
+    margin-top: 0.4rem;
   }
   button {
     padding: 8px 15px;
-    margin-top: 1rem;
+    margin-top: 0.7rem;
   }
 }

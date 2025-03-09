@@ -1,18 +1,39 @@
+import React, { useState } from "react";
+// import ToggleParagraph from ./"ToggleParagraph "
+
+
 type CardProps = {
  title: string;
  location: string;
  salary: string;
+ details: string
 }
 
 
+
+  
+
 function JobCard(props: CardProps) {
+
+  const [isVisible, setIsVisible] = useState(false); 
+  const toggleDetails = (): void => {
+    setIsVisible(prev => !prev); 
+  };
+
  return(
   
-  <div className="card">
+  <div className="card fade-in">
   <h2>{props.title}</h2>
   <p>{props.location}</p>
   <h3 className="salary">{props.salary}</h3>
-  <button className="btn">Show Details</button>
+<button onClick={toggleDetails}>
+        {isVisible ? "Hide Details" : "Show Details"} 
+      </button>
+
+      {isVisible && (
+        <p className="fade-in">{props.details}</p>
+      )}
+ 
   </div>
  
  

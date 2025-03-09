@@ -4,6 +4,7 @@ import Container from "./Container"
 import SearchBar from "./SearchBar"
 import FilterList from "./FilterList"
 
+
 function App() {
  
 
@@ -13,6 +14,7 @@ function App() {
    <SearchBar />
    <FilterList />
    <Container />
+  
    {/* <JobCard />
    <JobCard />
    <JobCard /> */}
